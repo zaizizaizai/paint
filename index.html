@@ -1,63 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>paint page</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-    <body class="contianer">
+    <body>
         <h1>画板</h1>
-        <div class="row">
-            <ul class="type">
-                <li class="line" data="line">直&nbsp;&nbsp;&nbsp;线</li>
-                <li class="rect" data="rect">矩&nbsp;&nbsp;&nbsp;形</li>
-                <li class="cycle" data="cycle">圆&nbsp;&nbsp;&nbsp;圈</li>
-                <li class="pen" data="pen">铅&nbsp;&nbsp;&nbsp;笔</li>
-                <li class="poly" data="poly">多&nbsp;边&nbsp;形</li>
-                <li class="eraser" data="eraser">橡&nbsp;&nbsp;&nbsp;皮</li>                
-            </ul>
-            <ul class="style">
-                <li class="stroke">描&nbsp;&nbsp;&nbsp;边</li>
-                <li class="filling">填&nbsp;&nbsp;&nbsp;充</li>
-            </ul>
-
-            <div class="space"></div>
-
-            <div class="box">
-                <span>颜色</span>
-                </lable>
-                <input type="color" name="color" value="#000000">
-            </div>
-            <div class="linewidth">
-                <span>线宽</span>
-                </lable>
-                <input type="number" name="number" value="1" max="150" min="1">
-            </div>
-
-            <div class="space"></div>
-
-            <div class="createBt">新&nbsp;&nbsp;&nbsp;建
-                <div class="create">
-                    <h6>画 板 尺 寸</h6>
-                    <div class="createWidth">
-                        <span>宽</span>
-                        <input type="number" max="1070" min="500" value="500">
-                    </div>
-                    <div class="createHeight">
-                        <span>高</span>
-                        <input type="number" max="650" min="300" value="300">
-                    </div>
-                    <input type="button" name="sure" value="确定" id="sure">
-                    <div class="createBefore">+</div>
+        <div class="container">
+            <div class="row">
+                <ul name="" class="type">
+                    <li class="line typeactive" data="line">直&nbsp;&nbsp;&nbsp;线</li>
+                    <li class="rect" data="rect">矩&nbsp;&nbsp;&nbsp;形</li>
+                    <li class="circle" data="circle">圆&nbsp;&nbsp;&nbsp;圈</li>
+                    <li class="pen" data="pen">铅&nbsp;&nbsp;&nbsp;笔</li>
+                    <li class="poly" data="poly">
+                        多&nbsp;边&nbsp;形
+                        <div class="trim">
+                            <span>边数</span>
+                            <input type="number" name="number" min="3" value="3" max="15">
+                        </div>
+                    </li>
+                    <li class="eraser" data="eraser">橡&nbsp;&nbsp;&nbsp;皮</li>
+                </ul>
+                <ul class="style">
+                    <li class="stroke styleactive">描&nbsp;&nbsp;&nbsp;边</li>
+                    <li class="fill">填&nbsp;&nbsp;&nbsp;充</li>
+                </ul>
+                <div class="space"></div>
+                <div class="box">
+                    <span>颜色</span>
+                    </label>
+                    <input type="color" name="color" value="#000000">
                 </div>
+                <div class="box linewidth">
+                    <span>线宽</span>
+                    <input type="number" name="number" value="1" max="150" min="1">
+                </div>
+                <div class="space"></div>
+                <div class="create setting">
+                    新&nbsp;&nbsp;&nbsp;建
+                    <div class="create">
+                        <h6>画 板 尺 寸</h6>
+                        <div class="create_width">
+                            <span>宽</span>
+                            <input type="number" max="1070" min="500" value="500">
+                        </div>
+                        <div class="create_height">
+                            <span>高</span>
+                            <input type="number" max="648" min="300" value="300">
+                        </div>
+                        <input type="button" name="sure1" value="确定" id="sure">
+                        <div class="create_before">+</div>
+                    </div>
+                </div>
+                <div class="clear setting">清&nbsp;&nbsp;&nbsp;空</div>
+                <div class="back setting">撤&nbsp;&nbsp;&nbsp;销</div>
+                <div class="save setting">保&nbsp;&nbsp;&nbsp;存</div>
+                <div class="cut setting" data="cut">剪&nbsp;&nbsp;&nbsp;切</div>
+                <div class="copy setting">复&nbsp;&nbsp;&nbsp;制</div>
             </div>
-            <div class="clear">清&nbsp;&nbsp;&nbsp;空</div>
-            <div class="back">撤&nbsp;&nbsp;&nbsp;销</div>
-            <div class="save">保&nbsp;&nbsp;&nbsp;存</div>
-            <div class="cut">剪&nbsp;&nbsp;&nbsp;切</div>
-            <div class="copy">复&nbsp;&nbsp;&nbsp;制</div>
         </div>
-        <canvas width="1000" height="650"></canvas>
+        <canvas width="1100" height="650"></canvas>
     </body>
-    <script type="text/javascript" src="index.js"></script>
 </html>
