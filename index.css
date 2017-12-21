@@ -1,0 +1,149 @@
+body,html {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat; 
+    background-position: 0 0 no-repeat; 
+    background-size: cover; 
+    overflow: hidden; 
+    font-family: "Microsoft yahei";
+    background-color: #fff;
+}
+
+li {
+    /* 设置列表项标记的类型 */
+    list-style-type: none;
+}
+
+ul {
+    padding-left: 10px;
+}
+
+h1 {
+    /*上下居中*/
+    position: fixed;
+    left: 15px;
+    top: 5px;
+    width: 250px;
+    height: 60px;
+    color: #E424C5;
+    font-size: 30px;
+    line-height: 60px;
+    /*左右居中*/
+    text-align: center;
+    /* background-color: #fff; */
+}
+
+canvas {
+    position: fixed;
+    left: 280px;
+    top: 5px;
+    /*把非块级元素强制改为块元素*/
+    display: block;
+    /*鼠标放上去变成手指形状*/
+    cursor: pointer;
+    background-color: #ffffff;
+    /* solid实线 */
+    border: 1px solid #cccccc;
+}
+
+.container {
+    width: 250px;
+    height: 60px;
+    position: fixed;
+    left: 15px;
+    top: 70px;
+}
+
+    .container h2{
+        width:100%;
+        height:60px;
+        font-size:22px;
+        text-align:center;
+        color: #ff377e;
+        font-weight:normal;
+        line-height:60px;
+        border-bottom:1px solid #000;
+    }
+
+    .container h3{
+        width:100%;
+        height:30px;
+        font-size:18px;
+        text-align:center;
+        color: #41b1ff;
+        font-weight:normal;
+        line-height:30px;
+    }
+
+    .row {
+        margin-top: 80px;
+        width: 100%; 
+        height: auto;
+        background-color: rgba(192,192,192,0.50);
+        overflow: hidden;
+    }
+
+
+
+    
+        .type {
+            width: 100%;
+            height: auto;
+            /*上下边距20px，左右边距0*/
+            margin: 20px 0;
+            padding-bottom: 10px;
+            /*把不同块分隔开*/
+            border-bottom: 1px solid #fff;
+        }
+
+        /*type框初始类型*/
+        .type .line {
+            background-color: #fff;
+            color: #2F86EB;
+            box-shadow: 0 0 10px rgba(0,120,225,0.77);            
+        }
+
+            /*将style一栏分隔到下面*/
+            .type:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+            .type li {
+                /*水平排列*/
+                float: left;
+                /*li之间间隔*/
+                width: 90px;
+                height: 45px;
+                /*上下边距0，左右边距自动*/
+                margin: 0 auto;
+                background-color: #2F86EB;
+                /*字体颜色*/
+                color: #fff;
+                font-size: 18px;
+                line-height: 45px;
+                text-align: center;
+                margin-bottom: 15px;
+                /*边框角弧度*/
+                border-radius: 5px;
+                cursor: pointer;
+                /*过渡效果*/
+                transition: all 0.7s;
+            }
+
+                .type li:hover {
+                    background-color: #fff;
+                    color: #2F86EB;
+                    box-shadow: 0 0 10px rgba(0,120,225,0.77);
+                }
+
+                /*子类两两分隔*/
+                .type li:nth-child(odd){
+                    margin-left: 25px;
+                }
+
+                /*相连子类间隔20px;*/
+                .type li:nth-child(even){
+                    margin-left: 20px;
+                }
