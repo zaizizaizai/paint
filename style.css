@@ -154,6 +154,33 @@ canvas {
     transform: scale(1);
     display: none;
 }
+.trim span {
+    display: block;
+    float: left;
+    width: 40px;
+    height: 45px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.7s;
+}
+.trim input {
+    float:left;
+    width:45px;
+    height:35px;
+    margin-top:5px;
+    border:1px solid #fff;
+    box-sizing:border-box;
+    text-align:center;
+    line-height:40px;
+    font-size:18px;
+    color:#fff;
+    background:#EC494E;
+    border-radius:3px;
+    box-shadow:0 0 0 4px #fff inset;
+    transition:all 0.7s;
+}
 
 
 
@@ -193,3 +220,61 @@ canvas {
 }
 
 
+
+
+.space{
+    float:left;
+    width:100%;
+    height:0;
+    border-bottom:1px solid #fff;
+    margin:20px 0;
+}
+
+
+
+
+.box {
+    /*将不同div区分开*/
+    float:left;
+    width:90px;
+    height:auto;
+    background-color:#EC494E;
+    overflow:hidden;
+    border-radius:5px;
+    transition:all 0.7s;
+    margin-left: 25px;
+}
+.linewidth {
+    margin-left: 20px;
+}
+.box:hover {
+    background-color: #fff;
+}
+.box span {
+    display:block;
+    float:left;
+    width:40px;
+    height:45px;
+    font-size:16px;
+    color:#fff;
+    text-align:center;
+    line-height:40px;
+    color:#fff;
+    transition:all 0.3s;
+}
+.box input{
+    float:left;
+    width:45px;
+    height:35px;
+    margin-top:5px;
+    border:1px solid #fff;
+    box-sizing:border-box;
+    text-align:center;
+    line-height:40px;
+    font-size:18px;
+    color:#fff;
+    background:#EC494E;
+    border-radius:3px;
+    box-shadow:0 0 0 4px #fff inset;
+    transition:all 0.3s;
+}
