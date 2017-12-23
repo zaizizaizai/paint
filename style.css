@@ -249,6 +249,7 @@ canvas {
 }
 .box:hover {
     background-color: #fff;
+    box-shadow:0 0 10px rgba(208, 48, 123, 0.77);
 }
 .box span {
     display:block;
@@ -261,6 +262,9 @@ canvas {
     line-height:40px;
     color:#fff;
     transition:all 0.3s;
+}
+.box span:hover {
+    color: #EC494E;
 }
 .box input{
     float:left;
@@ -277,4 +281,134 @@ canvas {
     border-radius:3px;
     box-shadow:0 0 0 4px #fff inset;
     transition:all 0.3s;
+}
+.box2 span{
+    width:55px;
+}
+.box2 input{
+    width:140px;
+}
+
+
+
+
+
+.cut,.createBt,.back{
+    float:left;
+    width:90px;
+    height:45px;
+    margin-left:25px;
+    margin-bottom:15px;
+    background-color: #5bd219;
+    color:#fff;
+    font-size:18px;
+    line-height:45px;
+    text-align:center;
+    border-radius:5px;
+    cursor:pointer;
+}
+.copy,.clear,.save{
+    float:left;
+    width:90px;
+    height:45px;
+    margin-left:20px;
+    margin-bottom:15px;
+    background-color: #5bd219;
+    color:#fff;
+    font-size:18px;
+    line-height:45px;
+    text-align:center;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.setting {
+    position: relative;
+    transition: all 0.7s;
+}
+.settingstyle {
+    background: #fff;
+    color: #22A531;
+}
+.create {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 165px;
+    border-radius: 5px;
+    background-color: #ec494e;
+    box-shadow: 0 0 15px rgba(236,73,78,0.76);
+    cursor: default;
+    display: none;
+}
+.create:hover {
+    color: #fff;
+}
+.create_before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+    width: 20px;
+    color: #fff;
+    line-height: 16px;
+    text-indent: -1px;
+    font-size: 30px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.create h6{
+    width:100%;
+    height:50px;
+    color:#fff;
+    line-height:50px;
+    text-align:center;
+    font-size:20px;
+    font-weight:normal;  
+}
+#sure {
+    width:60px;
+    height:30px;
+    font-size:14px;
+    border-radius:3px;
+    color:#fff;
+    background-color:#0078ff;
+    border:0;
+    outline:none;
+    cursor:pointer;
+    box-shadow:0 0 10px rgba(0, 120, 255, 0.5); 
+}
+.create_width,.create_height {
+    float: left;
+    width: 85px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #ffbc00;
+}
+.create_width:hover,.create_height:hover {
+    background-color:#fff;
+    color:#000;
+}
+.create_width span,.create_height span {
+    float: left;
+    width: 30px;
+    height: 100%;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+}
+.create_width input,.create_height input {
+    float:left;
+    margin-top:5px;
+    width:50px;
+    height:30px;
+    text-align:center;
+    line-height:30px;
+    font-size:14px;
+    border:1px solid #FFBB00;
+    /*number进入宽高里面*/
+    box-sizing:border-box;
 }
