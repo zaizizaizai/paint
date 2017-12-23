@@ -127,7 +127,7 @@ canvas {
     box-shadow: 0 0 10px rgba(0,120,225,0.77);
 }
 /*type框初始类型*/
-.type .line {
+.type .typeActive {
     background-color: #fff;
     color: #2F86EB;
     box-shadow: 0 0 10px rgba(0,120,225,0.77);            
@@ -207,7 +207,7 @@ canvas {
     background-color:#fff;
     box-shadow:0 0 10px rgba(53, 199, 195, 0.77);
 }
-.style .styleactive{
+.style .styleActive{
     color: #32B691;
     background-color:#fff;
     box-shadow:0 0 10px rgba(53, 199, 195, 0.77);
@@ -323,12 +323,14 @@ canvas {
 }
 
 .setting {
-    position: relative;
     transition: all 0.7s;
 }
-.settingstyle {
+.settingStyle {
     background: #fff;
     color: #22A531;
+}
+.createBt {
+    position: relative;
 }
 .create {
     position: absolute;
