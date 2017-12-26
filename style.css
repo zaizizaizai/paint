@@ -244,7 +244,7 @@ canvas {
     transition:all 0.7s;
     margin-left: 25px;
 }
-.linewidth {
+.lineWidth {
     margin-left: 20px;
 }
 .box:hover {
